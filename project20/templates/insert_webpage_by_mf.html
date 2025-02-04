@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Access Record List</title>
+</head>
+<body>
+    <center>
+        <h1>Access Record List</h1>
+        <table border="2px">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for to in ATO %}
+                    <tr>
+                        <td>{{ to.name }}</td>
+                        <td>{{ to.author }}</td>
+                        <td>{{ to.date }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>
